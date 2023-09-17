@@ -16,6 +16,9 @@
             <li><a href="#contact">contact</a></li>
           </ul>
         </div>
+        <div class="nav-menu-icon">
+          <icon name="menu"></icon>
+        </div>
       </nav>
     </div>
   </div>
@@ -78,22 +81,22 @@
     }
   }
 }
+.nav-menu-icon {
+  display: none;
+}
 
 @media (max-width: 567px) {
   .header {
     width: 100%;
   }
-  .nav-item-logo {
+
+  .nav-item-list {
     display: none;
   }
-  .nav-items {
-    justify-content: center;
-    width: 100%;
-  }
-  .nav-item-list {
-    padding: 0px;
-    width: 100%;
-    gap: 20px;
+  .nav-menu-icon {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
   }
 }
 </style>
